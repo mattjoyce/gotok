@@ -15,7 +15,7 @@ Usage:
   gotok [options] < [input]
 
 Options:
-  --model string        Use the embedding for this model (default: gpt-3.5-turbo)
+  --model string        Use the embedding for this model (default: gpt-4o)
   --encoding string     Use this specific encoding (overrides model if set)
   --input string        Path to input file
   --output string       Output destination: stderr, stdout, or a file path (default: stderr)
@@ -34,8 +34,8 @@ func main() {
     flag.Usage = printHelp
 
     // Define flags
-    model := flag.String("model", "gpt-3.5-turbo", "Use the embedding for this model.")
-    encoding := flag.String("encoding", "", "Use this specific encoding.")
+    model := flag.String("model", "gpt-4o", "Use the embedding for this model.")
+    encoding := flag.String("encoding", "o200k_base", "Use this specific encoding.")
     inputFile := flag.String("input", "", "Path to input file.")
     outputFile := flag.String("output", "stderr", "Output destination: stderr, stdout, or a file path.")
     passthrough := flag.Bool("passthrough", false, "If true, pass the input to stdout.")
