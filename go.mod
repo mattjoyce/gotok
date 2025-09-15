@@ -1,4 +1,4 @@
-module gotok
+module github.com/mattjoyce/gotok
 
 go 1.19
 
