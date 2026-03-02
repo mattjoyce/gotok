@@ -128,3 +128,5 @@ Here is a list of available models and their associated encodings that can be us
 
 This utility simplifies text preprocessing tasks for token-based models by giving you quick insight into input size, which helps in better managing prompt limits and structuring inputs for optimal model performance.
 
+## Changelog
+See [CHANGELOG.md](CHANGELOG.md).
